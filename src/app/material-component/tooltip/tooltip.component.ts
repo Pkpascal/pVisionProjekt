@@ -12,7 +12,7 @@ import { DemoMaterialModule } from 'src/app/demo-material-module';
 @Component({
   selector: 'app-tooltip',
   standalone: true,
-  imports:[DemoMaterialModule, FormsModule, MatButtonModule, MatTooltipModule, MatFormFieldModule, MatSelectModule, ReactiveFormsModule, NgFor],
+  imports:[DemoMaterialModule, FormsModule, MatButtonModule, MatTooltipModule, MatFormFieldModule, MatSelectModule, ReactiveFormsModule, NgFor, CdkScrollable],
   templateUrl: './tooltip.component.html',
   styleUrls: ['./tooltip.component.scss']
 })

@@ -102,6 +102,8 @@ Rounds
 .little-profile {
   .pro-img,
   .pro-img:first-child {
+    z-index: 1;
+    position: relative;
     margin-top: -110px;
     margin-bottom: 20px;
     img {

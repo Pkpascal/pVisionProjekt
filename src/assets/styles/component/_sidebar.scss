@@ -15,15 +15,32 @@ mat-sidenav {
   }
   #snav {
     box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
-    .mat-list-item {
-      height: auto;
-      &:hover {
-        background: none;
+    .mat-mdc-list-item {
+      margin-bottom: 10px;
+      &::before {
+        display: none;
       }
+      &.selected > .mdc-list-item__content > a {
+        background: $themecolor-alt;
+        border-radius: $radius;
+        color: $white;
   
-      .mat-list-item-content {
+        mat-icon {
+          color: $white;
+        }
+        .dd-icon {
+          -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+        }
+      }
+      &.selected .sub-item .mdc-list-item__content a.selected {
+        background: transparent;
+        color: $inverse;
+        font-weight: 500;
+      }
+      .mdc-list-item__content {
         display: block;
-        padding: 0px 15px;
+        height: 45px;
         &:hover {
           background: none;
           > a {
@@ -31,11 +48,9 @@ mat-sidenav {
           }
         }
       }
-  
       a {
         height: 45px;
         padding: 0 10px;
-        margin-bottom: 10px;
         align-items: center;
         display: flex;
         font-size: 15px;
@@ -55,23 +70,18 @@ mat-sidenav {
           height: 16px;
         }
       }
-      &.selected > .mat-list-item-content > a {
-        background: $themecolor-alt;
-        border-radius: $radius;
+    }
+    .mat-mdc-list-item.selected .mdc-list-item__content a{
+      background: $themecolor-alt;
+      border-radius: $radius;
+      color: $white;
+
+      mat-icon {
         color: $white;
-  
-        mat-icon {
-          color: $white;
-        }
-        .dd-icon {
-          -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-        }
       }
-      &.selected .sub-item .mat-list-item-content a.selected {
-        background: transparent;
-        color: $inverse;
-        font-weight: 500;
+      .dd-icon {
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
       }
     }
   }

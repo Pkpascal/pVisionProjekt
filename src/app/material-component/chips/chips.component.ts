@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MatChipInputEvent, MatChipsModule } from '@angular/material/chips';
+import { MatChipEditedEvent, MatChipInputEvent, MatChipsModule } from '@angular/material/chips';
 import { ENTER, COMMA } from '@angular/cdk/keycodes';
 import { DemoMaterialModule } from 'src/app/demo-material-module';
 import { ThemePalette } from '@angular/material/core';
@@ -69,5 +69,20 @@ export class ChipsComponent {
     }
   }
 
+  edit(fruit: Fruit, event: MatChipEditedEvent) {
+    const value = event.value.trim();
+
+    // Remove fruit if it no longer has a name
+    if (!value) {
+      this.remove(fruit);
+      return;
+    }
+
+    // Edit existing fruit
+    const index = this.fruits.indexOf(fruit);
+    if (index >= 0) {
+      this.fruits[index].name = value;
+    }
+  }
 
 }

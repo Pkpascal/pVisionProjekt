@@ -37,6 +37,7 @@ html {
 
 html .page-wrapper {
   height: calc(100vh - 64px);
+
   .page-content {
     padding: 30px 15px;
     max-width: 1300px;
@@ -51,9 +52,11 @@ a:focus,
 a {
   text-decoration: none;
 }
+
 a.link {
   color: $headingtext;
   text-decoration: none;
+
   &:hover,
   &:focus {
     color: $themecolor;
@@ -69,6 +72,7 @@ a.link {
 hr {
   border: 0px;
   height: 1px;
+  width: 100%;
   background: $border;
 }
 
@@ -76,6 +80,7 @@ html body .mdi:before,
 html body .mdi-set {
   line-height: initial;
 }
+
 code {
   padding: 0.2rem 0.4rem;
   font-size: 90%;
@@ -92,10 +97,12 @@ code {
 .list-inline {
   margin-left: 0px;
   padding: 0px;
+
   li {
     display: inline-block;
     list-style: none;
     margin-right: 10px;
+
     &:last-child {
       margin-right: 0px;
     }
@@ -105,6 +112,13 @@ code {
 .button-row button {
   margin-bottom: 5px;
   margin-right: 5px;
+  // color: $white;
+}
+.mat-mdc-fab.mat-accent, .mat-mdc-mini-fab.mat-accent{
+  color: $white;
+}
+.mat-mdc-tab-header{
+  border-bottom: 1px solid $border;
 }
 
 html body {
@@ -116,20 +130,30 @@ html body {
   .clear {
     clear: both;
   }
+
   ol li {
     margin: 5px 0;
   }
+
   // display
   .dl {
     display: inline-block;
   }
+
   .db {
     display: block;
   }
+
+  .jc-c {
+
+    justify-content: center;
+  }
+
   //   opacity
   .op-5 {
     opacity: 0.5;
   }
+
   .op-3 {
     opacity: 0.3;
   }
@@ -146,24 +170,31 @@ html body {
   .d-flex {
     display: flex;
   }
+
   .align-items-center {
     align-items: center;
   }
+
   .no-shrink {
     flex-shrink: 0;
   }
+
   .oh {
     overflow: hidden;
   }
+
   .hide {
     display: none;
   }
+
   .img-circle {
     border-radius: 100%;
   }
+
   .radius {
     border-radius: $radius;
   }
+
   .no-shadow {
     box-shadow: none;
   }
@@ -185,9 +216,11 @@ html body {
   .text-center {
     text-align: center;
   }
+
   .text-right {
     text-align: right;
   }
+
   .text-left {
     text-align: left;
   }
@@ -196,19 +229,33 @@ html body {
   .b-0 {
     border: none;
   }
+
   .b-r {
     border-right: 1px solid $border;
   }
+
   .b-l {
     border-left: 1px solid $border;
   }
+
   .b-b {
     border-bottom: 1px solid $border;
   }
+
   .b-t {
     border-top: 1px solid $border;
   }
+
   .b-all {
     border: 1px solid $border;
   }
+}
+
+.mat-mdc-form-field {
+  width: 100%;
+}
+
+.mdc-button .mdc-button__label {
+  letter-spacing: normal;
+  font-weight: 400;
 }
