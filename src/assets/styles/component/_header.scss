@@ -11,9 +11,17 @@ mat-toolbar {
       .navbar-brand {
         display: flex;
         line-height: 18px;
-        align-items: center;
+        align-items: center; 
         .dark-logo {
           display: none;
+        }
+        .light-logo{
+          display: flex;
+        }
+        .small-logo{
+          height: 50px;
+          width: auto;
+          aspect-ratio: 1;
         }
         b {
           margin-right: 5px;
@@ -42,4 +50,6 @@ mat-toolbar {
   .example-sidenav-container {
     flex: 1 0 auto;
   }
-  
+  .header-text{
+    color: white;
+  }

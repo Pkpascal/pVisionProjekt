@@ -13,6 +13,7 @@ export class ActivityTimelineComponent implements OnInit {
 
   activityData: Activity[];
 
+  color : any;
   constructor() {
 
     this.activityData = activities;

@@ -10,14 +10,15 @@ File: scss
 @include mat.core();
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import "./pVisionColorPalette.scss";
 
 $bodyfont: 'Poppins', sans-serif;
 $headingfont: 'Poppins', sans-serif;
 
 $mat-primary: (
-  100: #ebf9fa,
-  500: #1e88e5,
-  700: #1e88e5,
+  100: white,
+  500: $pVisionMainColor,
+  700: $pVisionMainColor,
   contrast: (
     100: rgba(black, 0.87),
     500: white,
@@ -26,8 +27,8 @@ $mat-primary: (
 );
 $mat-secondary: (
   100: #fff5f2,
-  500: #26c6da,
-  700: #26c6da,
+  500: $pVisionSecondary,
+  700: $pVisionSecondary,
   contrast: (
     100: white,
     500: white,
@@ -35,9 +36,9 @@ $mat-secondary: (
   ),
 );
 $mat-warn: (
-  100: FDEDE8,
-  500: #e91e63,
-  700: #e91e63,
+  100: white,
+  500: $pvisionInteraction,
+  700: $pvisionInteraction,
   contrast: (
     100: white,
     500: white,
@@ -87,7 +88,7 @@ $cyantheme: mat.define-light-theme(
 
 /*Theme Colors*/
 
-$topbar: #2196f3;
+$topbar: $pVisionMainColor;
 $sidebar: #fff;
 $sidebar-white: #e5edef;
 $sidebar-alt: #f2f6f8;
@@ -100,16 +101,16 @@ $sidebar-icons: #99abb4;
 $font-16: 16px;
 
 $light-text: #a6b7bf;
-$themecolor: #1e88e5;
-$themecolor-alt: #26c6da;
+$themecolor: $pVisionMainColor;
+$themecolor-alt: $pVisionSecondary;
 $themecolor-dark: #028ee1;
 
 /*bootstrap Color*/
 $danger: #fc4b6c;
-$success: #26c6da;
+$success: $pVisionSecondary;
 $warning: #ffb22b;
 $primary: #7460ee;
-$info: #1e88e5;
+$info: $pVisionMainColor;
 $inverse: #2f3d4a;
 $muted: #99abb4;
 $dark: #263238;

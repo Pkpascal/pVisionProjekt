@@ -27,7 +27,7 @@ export const activities:Activity[]=[
         comment:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.',
     
         bottomImage:'',
-        buttonColor:'primary'
+        buttonColor:'warn'
     
     },
     {

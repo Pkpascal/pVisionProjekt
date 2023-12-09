@@ -1,0 +1,28 @@
+//Nur Farben aus einer Color Palette benutzen. 
+
+//Für die seite die unten stehenden allgemeinen farben Nutzen
+
+//color palette 'Klassisch'
+$pVisionDarkGreen : #394B41;
+$pVisionLightGray : #9CB0A4;
+$pVisionDarkBlue : #0081BE;
+$pVisionLightBlue : #00B6F7;
+
+//color Palette 'Threedom'
+$pVisionBlue: #0077DF;
+$pVisionOrange: #C94B37;
+
+//Farben für die Seite
+
+$pVisionMainColor : #018655;
+$pVisionSecondary: $pVisionBlue;
+$pvisionInteraction : $pVisionOrange;
+
+
+$pVisionBlack : #020204;
+
+:root {
+    $pVisionMainColor : #018655;
+    $pVisionSecondary: $pVisionBlue;
+    $pvisionInteraction : $pVisionOrange ;
+  }
