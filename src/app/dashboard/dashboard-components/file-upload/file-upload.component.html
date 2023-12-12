@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-content>
+      <mat-card-title>File Upload</mat-card-title>
+      <mat-card-subtitle>Drop your Drone Footage here</mat-card-subtitle>
+      <div>
+         <button mat-raised-button color="warn" (click)="uploadFile()">Upload</button>
+      </div>
+    </mat-card-content>
+    <hr />
+    <mat-card-content>
+        <div>
+            
+                <mat-label>Select File </mat-label>
+                <input placeholder="Choose a file" type="file" (change)="onFileSelected($event)" [formControl]="fileControl" />
+
+           
+          </div>
+    </mat-card-content>
+  </mat-card>

@@ -6,6 +6,15 @@
     <!-- Topbar - style you can find in header.scss -->
     <!-- ============================================================== -->
     <mat-toolbar color="primary" class="topbar telative">
+
+         <!-- ============================================================== -->
+        <!-- sidebar toggle -->
+        <!-- ============================================================== -->
+        
+        <button mat-icon-button (click)="snav.toggle()" value="sidebarclosed">
+            <mat-icon>menu</mat-icon>
+        </button>
+        
         <!-- ============================================================== -->
         <!-- Logo - style you can find in header.scss -->
         <!-- ============================================================== -->
@@ -14,23 +23,13 @@
                 <!-- Logo icon --><b>
                     <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                     <!-- Dark Logo icon -->
-                    <img src="assets/images/pVision-Logo.png" alt="homepage" class="dark-logo">
+                    <img src="assets/images/pVision-Logo.svg" alt="homepage" class="dark-logo">
                     <!-- Light Logo icon -->
                     <img src="assets/images/pVision-Logo.svg" alt="homepage" class="light-logo small-logo">
                 </b>
                 <!--End Logo icon -->
-                <!-- Logo text -->
-                <span class="header-text">
-                PVision
-                </span> </a>
+            </a>
         </div>
-        <!-- ============================================================== -->
-        <!-- sidebar toggle -->
-        <!-- ============================================================== -->
-        
-        <button mat-icon-button (click)="snav.toggle()" value="sidebarclosed">
-            <mat-icon>menu</mat-icon>
-        </button>
         <!-- ============================================================== -->
         <!-- app header component - style you can find in header.scss / header.component.ts-->
         <!-- ============================================================== -->
