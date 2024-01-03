@@ -44,11 +44,11 @@ export class SalesOverviewComponent implements OnInit {
     this.chartOptions = {
       series: [
         {
-          name: "Pixel",
+          name: "MvH Aktuell",
           data: [44, 55, 57, 56, 61, 58],
         },
         {
-          name: "Ample",
+          name: "MvH durschnitt",
           data: [76, 85, 101, 98, 87, 105],
         },
       ],
@@ -83,7 +83,7 @@ export class SalesOverviewComponent implements OnInit {
         show: false,
       },
       fill: {
-        colors: ["#26c6da", "#1e88e5"],
+        colors: ["#018655", "#1e88e5"],
         opacity: 1,
       },
       tooltip: {
