@@ -1,8 +1,9 @@
-<mat-card>
+<mat-card style="">
   <mat-card-content>
-    <mat-card-title>Our Visitors</mat-card-title>
-    <mat-card-subtitle>Different Devices Used to Visit</mat-card-subtitle>
-    <div class="piechart">
+    <mat-card-title>Auswertung</mat-card-title>
+    <mat-card-subtitle>Die letzten Schäden ihrerer Anlage</mat-card-subtitle>
+   <div style='display: flex;justify-content:center; align-items:center;'>
+    <div class="piechart" style='padding: 5px;'>
       <apx-chart
         [series]="VisitorChartOptions.series"
         [chart]="VisitorChartOptions.chart"
@@ -17,25 +18,76 @@
       >
       </apx-chart>
     </div>
+    <div class="piechart" style='padding: 5px'>
+      <apx-chart
+        [series]="VisitorChartOptions.series"
+        [chart]="VisitorChartOptions.chart"
+        [labels]="VisitorChartOptions.labels"
+        [responsive]="VisitorChartOptions.responsive"
+        [tooltip]="VisitorChartOptions.tooltip"
+        [legend]="VisitorChartOptions.legend"
+        [colors]="VisitorChartOptions.colors"
+        [dataLabels]="VisitorChartOptions.dataLabels"
+        [plotOptions]="VisitorChartOptions.plotOptions"
+        [stroke]="VisitorChartOptions.stroke"
+      >
+      </apx-chart>
+    </div>
+    <div class="piechart" style='padding: 5px'> 
+      <apx-chart
+        [series]="VisitorChartOptions.series"
+        [chart]="VisitorChartOptions.chart"
+        [labels]="VisitorChartOptions.labels"
+        [responsive]="VisitorChartOptions.responsive"
+        [tooltip]="VisitorChartOptions.tooltip"
+        [legend]="VisitorChartOptions.legend"
+        [colors]="VisitorChartOptions.colors"
+        [dataLabels]="VisitorChartOptions.dataLabels"
+        [plotOptions]="VisitorChartOptions.plotOptions"
+        [stroke]="VisitorChartOptions.stroke"
+      >
+      </apx-chart>
+    </div>
+  </div>
   </mat-card-content>
   <hr />
   <mat-card-content>
-    <ul class="list-inline text-center">
+    <ul class="list-inline" style="display: flex; justify-content: space-around;">
       <li>
         <h6 class="text-success m-0">
-          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>Mobile
+          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>{{VisitorChartOptions.labels[0]}}
         </h6>
-      </li>
-      <li>
         <h6 class="text-info m-0">
-          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>Desktop
+          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>{{VisitorChartOptions.labels[1]}}
+        </h6>
+        <h6 class="m-0" style="color: #C94B37;">
+          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>{{VisitorChartOptions.labels[2]}}
         </h6>
       </li>
       <li>
-        <h6 class="text-purple m-0">
-          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>Tablet
+        <h6 class="text-success m-0">
+          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>{{VisitorChartOptions.labels[0]}}
+        </h6>
+        <h6 class="text-info m-0">
+          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>{{VisitorChartOptions.labels[1]}}
+        </h6>
+        <h6 class="m-0" style="color: #C94B37;">
+          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>{{VisitorChartOptions.labels[2]}}
+        </h6>
+      </li>
+      <li>
+        <h6 class="text-success m-0">
+          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>{{VisitorChartOptions.labels[0]}}
+        </h6>
+        <h6 class="text-info m-0">
+          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>{{VisitorChartOptions.labels[1]}}
+        </h6>
+        <h6 class="m-0" style="color: #C94B37;">
+          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>{{VisitorChartOptions.labels[2]}}
         </h6>
       </li>
     </ul>
+
+    
   </mat-card-content>
 </mat-card>

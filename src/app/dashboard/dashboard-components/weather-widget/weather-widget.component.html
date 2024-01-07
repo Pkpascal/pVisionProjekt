@@ -1,0 +1,53 @@
+<div class="row">
+    <!-- Wettervorhersage Card -->
+    <div class="col-12" style=" max-width: 400px;">
+      <mat-card class="weather-card" >
+        <mat-card-header>
+          <mat-card-title>Wettervorhersage</mat-card-title>
+          <mat-card-subtitle>3-Tage-Prognose</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <!-- Tab-Gruppe für verschiedene Tage -->
+          <mat-tab-group mat-stretch-tabs="false">
+            <mat-tab label="Tag 1">
+              <mat-card-content>
+                <!-- Wetterinformationen für Tag 1 -->
+                <div class="weather-info"
+                style=" display: flex; flex-direction: column; justify-items: center; color: black">
+                <img src='assets\images\sun.png' alt="sunny" class="img-circle" style="height: 150px; width: 150px; ">
+                <div class="temperature">25°C</div>
+                  <div class="conditions">Sonnig</div>
+                  <div class="details">Wind: 10 km/h, Luftfeuchtigkeit: 50%</div>
+                </div>
+              </mat-card-content>
+            </mat-tab>
+            <mat-tab label="Tag 2">
+              <mat-card-content>
+                <!-- Wetterinformationen für Tag 2 -->
+                <div class="weather-info"
+                style=" color: black">
+                <img src='assets\images\cloudy.png' alt="sunny" class="img-circle" style="height: 150px; width: 150px; ">
+                  <div class="temperature">22°C</div>
+                  <div class="conditions">Wolkig</div>
+                  <div class="details">Wind: 15 km/h, Luftfeuchtigkeit: 60%</div>
+                </div>
+              </mat-card-content>
+            </mat-tab>
+
+            <mat-tab label="Tag 3">
+                <mat-card-content>
+                  <!-- Wetterinformationen für Tag 3 -->
+                  <div class="weather-info"
+                  style="color: black">
+                  <img src='assets\images\rain.png' alt="sunny" class="img-circle" style="height: 150px; width: 150px; ">
+                    <div class="temperature">21°C</div>
+                    <div class="conditions">Regnerisch</div>
+                    <div class="details">Wind: 20 km/h, Luftfeuchtigkeit: 70%</div>
+                  </div>
+                </mat-card-content>
+              </mat-tab>
+          </mat-tab-group>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>

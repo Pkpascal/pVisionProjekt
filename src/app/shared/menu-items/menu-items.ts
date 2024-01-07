@@ -9,12 +9,10 @@ export interface Menu {
 
 const MENUITEMS = [
   { state: 'dashboard', name: 'Dashboard', type: 'link', icon: 'av_timer' },
-  { state: 'button', type: 'link', name: 'Buttons', icon: 'crop_7_5' },
-  { state: 'grid', type: 'link', name: 'Grid List', icon: 'view_comfy' },
-  { state: 'lists', type: 'link', name: 'Lists', icon: 'view_list' },
-  { state: 'menu', type: 'link', name: 'Menu', icon: 'view_headline' },
-  { state: 'tabs', type: 'link', name: 'Tabs', icon: 'tab' },
-  { state: 'stepper', type: 'link', name: 'Stepper', icon: 'web' },
+  { state: 'button', type: 'link', name: 'Datenanalyse', icon: 'insert_chart_outlined' },
+  { state: 'grid', type: 'link', name: 'Kommunikation', icon: 'chat_bubble_outline' },
+  { state: 'lists', type: 'link', name: 'Aufträge', icon: 'view_list' },
+/*
   {
     state: 'expansion',
     type: 'link',
@@ -49,7 +47,7 @@ const MENUITEMS = [
     type: 'link',
     name: 'Slide Toggle',
     icon: 'all_inclusive'
-  }
+  } */
 ];
 
 @Injectable()

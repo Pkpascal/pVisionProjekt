@@ -1,10 +1,11 @@
 <mat-card class="oh text-center little-profile">
     <img mat-card-image src="assets/images/background/profile-bg.jpg" alt="Photo of a Shiba Inu">
     <mat-card-content>
-        <div class="pro-img">
-            <img src="assets/images/users/4.jpg" width="100" alt="user" class="img-circle">
+        <div class="pro-img" style="width: 100%; display: flex; justify-content: center;">
+            <p class="img-circle" style="background-color: white; width: 100px; height: 50px; display: flex; justify-content: center; align-items: center;" > {{selected.getDate()}}.{{selected.getMonth() + 1}} {{selected.getFullYear()}}</p>
         </div>
-        <h3 class="m-b-0">Test User</h3>
-        <h6 class="m-t-0 "> Neuer Nutzer</h6>
+        <mat-card class="demo-inline-calendar-card">
+            <mat-calendar [(selected)]="selected"></mat-calendar>
+          </mat-card>
     </mat-card-content>
 </mat-card>

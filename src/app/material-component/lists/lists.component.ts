@@ -4,59 +4,46 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import { DemoMaterialModule } from 'src/app/demo-material-module';
-
+import { InsErgebnisseComponent } from 'src/app/dashboard/dashboard-components/ins-ergebnisse/ins-ergebnisse.component';
 @Component({
   selector: 'app-lists',
   standalone: true,
-  imports: [DemoMaterialModule, CommonModule, MatListModule, NgFor, MatIconModule, MatDividerModule, DatePipe],
+  imports: [DemoMaterialModule, CommonModule, MatListModule, NgFor, MatIconModule, MatDividerModule, DatePipe,InsErgebnisseComponent],
   templateUrl: './lists.component.html',
   styleUrls: ['./lists.component.scss']
 })
 export class ListsComponent {
-  typesOfShoes = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
-  messages = [
+  typesOfShoes = [
+    'Boots', 
+    'Clogs', 
+    'Loafers', 
+    'Moccasins', 
+    'Sneakers'];
+  auftrage = [
     {
-      from: 'Nirav joshi (nbj@gmail.com)',
-      image: 'assets/images/users/1.jpg',
-      subject: 'Material angular',
-      content: 'This is the material angular template'
+      from: 'Person1 (beispiel@1.com)',
+      subject: 'Routineuntersuchung',
+      content: 'Die geplante Jährliche Untersuchung'
     },
     {
-      from: 'Sunil joshi (sbj@gmail.com)',
-      image: 'assets/images/users/2.jpg',
-      subject: 'Wrappixel',
-      content: 'We have wrappixel launched'
+      from: 'Person2 (beispiel@2.com)',
+      subject: 'Leistungsabfall',
+      content: 'Im letzten monat gab es einen Starken abfall bei unserer Solaranlage'
     },
     {
-      from: 'Vishal Bhatt (bht@gmail.com)',
-      image: 'assets/images/users/3.jpg',
-      subject: 'Task list',
-      content: 'This is the latest task hasbeen done'
+      from: 'Person3 (beispiel@3.com)',
+      subject: 'Beschädigung',
+      content: 'Ich habe vor kurzem ein Schaden an unserer Anlage bemerkt'
+    },
+    {
+      from: 'Person1 (beispiel@1.com)',
+      subject: '...Älterer Auftrag',
+      content: '...'
+    },
+    {
+      from: 'Person1 (beispiel@1.com)',
+      subject: '...Älterer Auftrag',
+      content: '...'
     }
-  ];
-
-  folders: any[] = [
-    {
-      name: 'Photos',
-      updated: new Date('1/1/16'),
-    },
-    {
-      name: 'Recipes',
-      updated: new Date('1/17/16'),
-    },
-    {
-      name: 'Work',
-      updated: new Date('1/28/16'),
-    },
-  ];
-  notes: any[] = [
-    {
-      name: 'Vacation Itinerary',
-      updated: new Date('2/20/16'),
-    },
-    {
-      name: 'Kitchen Remodel',
-      updated: new Date('1/18/16'),
-    },
   ];
 }

@@ -6,12 +6,12 @@ import { ContactsComponent } from './dashboard-components/contacts/contacts.comp
 import { ActivityTimelineComponent } from './dashboard-components/activity-timeline/activity-timeline.component';
 import { FileUploadComponent } from './dashboard-components/file-upload/file-upload.component';
 import { InsErgebnisseComponent } from "./dashboard-components/ins-ergebnisse/ins-ergebnisse.component";
-
+import { WeatherWidgetComponent } from './dashboard-components/weather-widget/weather-widget.component';
 @Component({
     selector: 'app-dashboard',
     standalone: true,
     templateUrl: './dashboard.component.html',
-    imports: [SalesOverviewComponent, OurVisiterComponent, ProfileComponent, ContactsComponent, ActivityTimelineComponent, FileUploadComponent, InsErgebnisseComponent]
+    imports: [SalesOverviewComponent, OurVisiterComponent, ProfileComponent, ContactsComponent, ActivityTimelineComponent, FileUploadComponent, InsErgebnisseComponent,WeatherWidgetComponent]
 })
 export class DashboardComponent implements AfterViewInit {
 

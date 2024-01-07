@@ -37,11 +37,11 @@ export class OurVisiterComponent {
 
   constructor() {
     this.VisitorChartOptions = {
-      series: [45, 15, 27, 18],
+      series: [25, 15, 5, 55],
       chart: {
         type: "donut",
         fontFamily: "Poppins,sans-serif",
-        height: 253,
+        height: 150,
       },
       plotOptions: {
         pie: {
@@ -62,8 +62,8 @@ export class OurVisiterComponent {
       legend: {
         show: false,
       },
-      labels: ["Mobile", "Tablet", "Desktop", "Other"],
-      colors: ["#1e88e5", "#26c6da", "#745af2", "#eceff1"],
+      labels: ["Leicht", "Schwerwiegend", "Kritisch", "Keine Schäden"],
+      colors: ["#1e88e5", "#018655", "#C94B37", "#eceff1"],
       responsive: [
         {
           breakpoint: 767,

@@ -1,19 +1,39 @@
 <mat-card>
-    <mat-card-content>
-      <mat-card-title>File Upload</mat-card-title>
-      <mat-card-subtitle>Drop your Drone Footage here</mat-card-subtitle>
-      <div>
-         <button mat-raised-button color="warn" (click)="uploadFile()">Upload</button>
-      </div>
-    </mat-card-content>
-    <hr />
-    <mat-card-content>
-        <div>
-            
-                <mat-label>Select File </mat-label>
-                <input placeholder="Choose a file" type="file" (change)="onFileSelected($event)" [formControl]="fileControl" />
 
-           
-          </div>
-    </mat-card-content>
-  </mat-card>
+  <div style="display: flex; flex-direction: row;">
+    <div>
+      <mat-card-content>
+        <mat-card-title>Datei-Upload</mat-card-title>
+        <mat-card-subtitle>Laden Sie hier ihre Drohnenaufnahmen hoch</mat-card-subtitle>
+
+        <div>
+          <button mat-raised-button color="warn" (click)="uploadFile()">Hochladen</button>
+        </div>
+      </mat-card-content>
+      <hr />
+      <mat-card-content>
+        <div>
+
+          <mat-label>-</mat-label>
+          <input placeholder="Choose a file" type="file" (change)="onFileSelected($event)"
+            [formControl]="fileControl" />
+
+
+        </div>
+
+
+
+      </mat-card-content>
+    </div>
+
+    <mat-list style="min-width: 200px;">
+      <div mat-subheader>Letzte Datein</div>
+      <mat-list-item *ngFor="let note of notes">
+        <mat-icon matListItemIcon>note</mat-icon>
+        <div matListItemTitle>{{note.name}}</div>
+        <div matListItemLine>{{note.updated | date}}</div>
+      </mat-list-item>
+    </mat-list>
+
+  </div>
+</mat-card>
