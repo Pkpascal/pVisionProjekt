@@ -2,7 +2,7 @@
   <mat-card-content>
     <mat-card-title>Auswertung</mat-card-title>
     <mat-card-subtitle>Die letzten Schäden ihrerer Anlage</mat-card-subtitle>
-   <div style='display: flex;justify-content:center; align-items:center;'>
+   <div style='display: flex; flex-wrap: wrap;justify-content:center; align-items:center;'>
     <div class="piechart" style='padding: 5px;'>
       <apx-chart
         [series]="VisitorChartOptions.series"
@@ -63,29 +63,7 @@
         <h6 class="m-0" style="color: #C94B37;">
           <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>{{VisitorChartOptions.labels[2]}}
         </h6>
-      </li>
-      <li>
-        <h6 class="text-success m-0">
-          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>{{VisitorChartOptions.labels[0]}}
-        </h6>
-        <h6 class="text-info m-0">
-          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>{{VisitorChartOptions.labels[1]}}
-        </h6>
-        <h6 class="m-0" style="color: #C94B37;">
-          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>{{VisitorChartOptions.labels[2]}}
-        </h6>
-      </li>
-      <li>
-        <h6 class="text-success m-0">
-          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>{{VisitorChartOptions.labels[0]}}
-        </h6>
-        <h6 class="text-info m-0">
-          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>{{VisitorChartOptions.labels[1]}}
-        </h6>
-        <h6 class="m-0" style="color: #C94B37;">
-          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>{{VisitorChartOptions.labels[2]}}
-        </h6>
-      </li>
+      </li>     
     </ul>
 
     
